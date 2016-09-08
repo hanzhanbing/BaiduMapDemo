@@ -1,0 +1,25 @@
+//
+//  PrefixHeader.pch
+//  BaiduMapDemo
+//
+//  Created by hanzhanbing on 16/8/31.
+//  Copyright © 2016年 asj. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "BaseVC.h"
+#import <MBProgressHUD.h>
+
+#define WIDTH  [[UIScreen mainScreen] bounds].size.width
+#define HEIGHT [[UIScreen mainScreen] bounds].size.height
+
+#define SystemVersion [[[UIDevice currentDevice] systemVersion] floatValue]
+
+#pragma mark - Color
+
+#define kColorFromRGBHex(value) [UIColor colorWithRed:((float)((value & 0xFF0000) >> 16))/255.0 green:((float)((value & 0xFF00) >> 8))/255.0 blue:((float)(value & 0xFF))/255.0 alpha:1.0]
+#define AppThemeColor kColorFromRGBHex(0xFCAA1B)
+
+#endif /* PrefixHeader_pch */
